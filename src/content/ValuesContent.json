@@ -1,0 +1,31 @@
+{
+  "title": "Our Values",
+  "text": "",
+  "imageSrc": "/assets/img/1.webp",
+  "section": [
+    {
+      "title": "Transparency",
+      "content": "We are committed to providing our clients with complete transparency about our services and how we manage their investments.",
+      "icon": "notes.svg",
+      "imageSrc": "/assets/img/values/transparency.webp"
+    },
+    {
+      "title": "Accountability",
+      "content": "We hold ourselves accountable for the quality of our work and the results we deliver to our clients.",
+      "icon": "notes.svg",
+      "imageSrc": "/assets/img/values/accountability.webp"
+    },
+    {
+      "title": "Excellence",
+      "content": "We strive to provide our clients with the highest level of service possible, ensuring excellence in every project.",
+      "icon": "notes.svg",
+      "imageSrc": "/assets/img/values/excellence.webp"
+    },
+    {
+      "title": "Integrity",
+      "content": "We adhere to the highest ethical standards, ensuring integrity in all interactions and decisions for our clients.",
+      "icon": "notes.svg",
+      "imageSrc": "/assets/img/values/integrity.webp"
+    }
+  ]
+}

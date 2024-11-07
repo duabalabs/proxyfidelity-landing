@@ -1,0 +1,13 @@
+{
+  "title": "Welcome to ProxyFidelity Services",
+  "text": "Your one-stop online project management platform for Expatriates and Africans in the diaspora seeking to work on projects or provide services in Ghana remotely.",
+  "button": [
+    {
+      "title": "Explore"
+    },
+    {
+      "title": "Learn more",
+      "color": "#fff"
+    }
+  ]
+}
