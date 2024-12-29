@@ -16,6 +16,7 @@ import {
   ButtonWrapper,
 } from "./styles";
 import "./styles.css"; // Import styles.css
+import { navigateToDashboard } from "../../common/utils/helper";
 
 const ContentBlock = ({
   icon,
@@ -60,7 +61,7 @@ const ContentBlock = ({
             <ContentWrapper>
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
-              {direction === "right" ? (
+              {button && (
                 <ButtonWrapper>
                   {typeof button === "object" &&
                     button.map(
@@ -68,6 +69,7 @@ const ContentBlock = ({
                         item: {
                           color?: string;
                           title: string;
+                          toDashboard?: boolean;
                         },
                         id: number
                       ) => {
@@ -75,7 +77,11 @@ const ContentBlock = ({
                           <Button
                             key={id}
                             color={item.color}
-                            onClick={() => scrollTo("about")}
+                            onClick={
+                              item.toDashboard
+                                ? navigateToDashboard
+                                : () => scrollTo("about")
+                            }
                           >
                             {t(item.title)}
                           </Button>
@@ -83,7 +89,8 @@ const ContentBlock = ({
                       }
                     )}
                 </ButtonWrapper>
-              ) : (
+              )}
+              {section && (
                 <ServiceWrapper>
                   <Row justify="space-between">
                     {typeof section === "object" &&

@@ -64,7 +64,11 @@ const services = [
   },
 ];
 
-export const ServicesSection = ({ id }) => {
+interface ServicesSectionProps {
+  id: string;
+}
+
+export const ServicesSection: React.FC<ServicesSectionProps> = ({ id }) => {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   return (

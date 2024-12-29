@@ -3,7 +3,8 @@
   "text": "Your one-stop online project management platform for Expatriates and Africans in the diaspora seeking to work on projects or provide services in Ghana remotely.",
   "button": [
     {
-      "title": "Explore"
+      "title": "Go To My Projects",
+      "toDashboard": true
     },
     {
       "title": "Learn more",

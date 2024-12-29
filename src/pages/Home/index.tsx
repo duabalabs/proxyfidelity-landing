@@ -29,7 +29,6 @@ const Home = () => {
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
-        id="about"
       />
       <ContentBlock
         direction="right"
@@ -37,7 +36,7 @@ const Home = () => {
         content={ProxyContent.text}
         imageSrc={ProxyContent.imageSrc}
         icon="product-launch.svg"
-        id="about"
+        id="about2"
       />
       <ContentBlock
         direction="left"
@@ -45,10 +44,10 @@ const Home = () => {
         content={InvestContent.text}
         imageSrc={InvestContent.imageSrc}
         icon="waving.svg"
-        id="about"
+        id="about3"
       />
       <ContentBlock
-        direction="left"
+        direction="right"
         title={ValuesContent.title}
         content={ValuesContent.text}
         section={ValuesContent.section}

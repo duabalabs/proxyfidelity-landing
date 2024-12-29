@@ -12,11 +12,12 @@ export const FloatingButton = () => (
     style={{
       position: "fixed",
       bottom: "20px",
-      right: "20px",
+      left: "20px",
       zIndex: 1000,
+      backgroundColor: "#2E186A",
     }}
   >
-    My Projects
+    Explore
   </Button>
 );
 
