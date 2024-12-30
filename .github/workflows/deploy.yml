@@ -1,4 +1,4 @@
-name: Deploy Landing Page/
+name: Deploy Landing Page
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
           username: ${{ secrets.DROPLET_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: build/*
-          target: /var/www/landing-page/*
+          target: /var/www/landing-page/
 
       - name: Reload Nginx
         uses: appleboy/ssh-action@v0.1.6
