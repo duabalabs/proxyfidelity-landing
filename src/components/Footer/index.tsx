@@ -3,10 +3,8 @@ import { withTranslation, TFunction } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 
-import i18n from "i18next";
 import {
   FooterSection,
-  Title,
   NavLink,
   Extra,
   LogoContainer,
@@ -16,9 +14,6 @@ import {
   Empty,
   FooterContainer,
   Language,
-  Label,
-  LanguageSwitch,
-  LanguageSwitchContainer,
 } from "./styles";
 import { Button } from "../../common/Button";
 import { navigateToDashboard } from "../../common/utils/helper";
@@ -29,10 +24,6 @@ interface SocialLinkProps {
 }
 
 const Footer = ({ t }: { t: TFunction }) => {
-  const handleChange = (language: string) => {
-    i18n.changeLanguage(language);
-  };
-
   const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
       <a

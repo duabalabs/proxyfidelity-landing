@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { SvgIcon } from "../SvgIcon";
 import { ScrollUpContainer } from "./styles";
-import FloatingButton from "../../components/FloatingButton";
 
 const ScrollToTop = () => {
   const [showScroll, setShowScroll] = useState(false);
