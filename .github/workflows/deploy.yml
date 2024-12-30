@@ -20,7 +20,7 @@ jobs:
       - name: Build Landing Page
         run: yarn build
 
-      - name: Upload Build to Server
+      - name: Upload Build Content to Server
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.DROPLET_IP }}
